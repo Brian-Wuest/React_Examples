@@ -1,0 +1,2 @@
+How to create a react application with typescript
+	npx create-react-app my-app --template typescript
