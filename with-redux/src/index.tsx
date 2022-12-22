@@ -10,6 +10,9 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
+/**
+ * Pull the routes from a separate page to keep this one clean of the application layout.
+ */
 root.render(
   <React.StrictMode>
     <RouterProvider router={routes} />
