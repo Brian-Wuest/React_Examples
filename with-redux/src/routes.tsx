@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AboutPage from "./components/about/AboutPage";
 import App from "./components/App";
-import { CoursesPage } from './components/courses/CoursesPage';
+import  * as coursesPage from './components/courses/CoursesPage';
 import HomePage from "./components/home/HomePage";
 import PageNotFound from "./components/PageNotFound";
 
@@ -29,7 +29,9 @@ export const routes = createBrowserRouter([
       },
       {
         path: "courses",
-        element: <CoursesPage />,
+        // Note: This needs to be done this way because the page
+        // is being managed by redux.
+        element: <coursesPage.default />,
       },
     ],
   },
