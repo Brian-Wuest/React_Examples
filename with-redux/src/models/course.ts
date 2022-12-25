@@ -1,3 +1,7 @@
 export interface ICourse {
-  title: string
+  id: number,
+  title: string,
+  slug: string,
+  authorId: number,
+  category: string
 }

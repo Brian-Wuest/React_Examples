@@ -5,5 +5,5 @@ export interface IReduxProp {
    * @param actionResult The action result for calling a redux action.
    * @returns 
    */
-  dispatch: (actionResult: any) => void
+  dispatch: (actionResult: any) => Promise<void>
 }
